@@ -63,13 +63,7 @@ This test may get close to the peak performance supported by the underlying netw
 4. Case 4: you will modify the code implemented in Case 3. Please save the new version of your code as udphw3case4.cpp (modified from udphw3.cpp). Please also make a copy of hw3.cpp, and name this new file as hw3case4.cpp.
 Modify hw3case4.cpp to include test case 4. Test case 4 runs similar to test case 3, but the "sliding window" algorithm/implementation only runs for a sliding window of size 1 and size 30. Add code to the serverEarlyRetransfunction in udphw3case4.cpp so that packets are randomly dropped packets N% of the time, where N is every integer from 0 to 10. You will also need to modify the output of hw3case4.cpp so that it outputs the drop percentage (instead of the window size) into the file. You can simulate a drop by just not returning an ACK when you receive a packet.
 4. Statement of Work
-Upzip the provided zip file and extract the following files to your working directory:
-1. hw3.cpp
-2. UdpSocket.h
-3. UdpSocket.cpp
-4. Timer.h
-5. Timer.cpp
-6. udp.plt
+
 Complete implementations of the following four functions that have been outlined above in a separate file, udphw3.cpp:
 1. int clientStopWait( UdpSocket &sock, const int max, int message[] )
 2. void serverReliable( UdpSocket &sock, const int max, int message[] )
